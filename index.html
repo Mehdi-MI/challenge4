@@ -1,52 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  <!-- Sign-up form start -->
-
-  Stay updated!
-
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon"href="images/favicon-32x32.png"type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"rel="stylesheet"/>
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <div class="card container container2">
+      <div class="Subscribe">
+        <div class="grid">
+          <div>
+            <picture>
+              <source media="(min-width: 975px)"srcset="file:///C:/Users/HP/Desktop/HTML/Challenge4/sides/newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-desktop.svg"/>
+              <img class="illustration"src="file:///C:/Users/HP/Desktop/HTML/Challenge4/sides/newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-mobile.svg"alt="illustration"/>
+            </picture>
+          </div>
+          <div class="context order">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <div class="media">
+              <div class="flex media2">
+                <img class="icon"src="./assets/images/icon-list.svg"alt="icon"/>
+                <p>Product discovery and building what matters</p>
+              </div>
+              <div class="flex media2">
+                <img class="icon"
+                  src="./assets/images/icon-list.svg"alt="icon"/>
+                <p>Measuring to ensure updates are a success</p>
+              </div>
+              <div class="flex media2">
+                <img class="icon"
+                  src="./assets/images/icon-list.svg"alt="icon"/>
+                <p>And much more!</p>
+              </div>
+            </div>
+            <div class="form">
+              <div class="flex space-between">
+                <label>
+                  Email address
+                </label>
+                <label class="error">
+                  valid email required
+                </label>
+              </div>
+              <input type="text"class="input"placeholder="email@company.com"/>
+              <button class="btn submit">
+                Subscribe to monthly newsletter
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gg">
+        <div class="center">
+          <div>
+            <img src="file:///C:/Users/HP/Desktop/HTML/Challenge4/sides/newsletter-sign-up-with-success-message-main/assets/images/icon-success.svg" alt="icon" />
+            <h2 style="font-size: 50px; font-weight: 700">
+              Thanks for subscribing
+            </h2>
+            <p style="line-height: 1.5; font-size: 18px">
+              A confirmation email has been sent to
+              <span class="message"></span>. Please open it and click the button
+              inside to confirm your subscription
+            </p>
+          </div>
+          <div>
+            <button class="btn getback">Dismiss message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
