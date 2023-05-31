@@ -1,9 +1,9 @@
 const submit = document.querySelector(".submit");
-const userinput = document.querySelector(".myinput");
+const userinput = document.querySelector(".input");
 const error = document.querySelector(".error");
-const thankyou = document.querySelector(".thank-you");
+const gg = document.querySelector(".gg");
 const getback = document.querySelector(".getback");
-const subscribing = document.querySelector(".subscribing");
+const Subscribe = document.querySelector(".Subscribe");
 const message = document.querySelector(".message");
 
 const regex =
@@ -15,14 +15,14 @@ submit.addEventListener("click", () => {
     userinput.classList.add("error-input");
     userinput.style.color = "hsl(4, 100%, 67%)";
   } else {
-    subscribing.style.display = "none";
-    thankyou.style.display = "block";
+    Subscribe.style.display = "none";
+    gg.style.display = "block";
     message.innerHTML = userinput.value;
   }
 });
 
 getback.addEventListener("click", () => {
-  subscribing.style.display = "block";
-  thankyou.style.display = "none";
+  Subscribe.style.display = "block";
+  gg.style.display = "none";
   userinput.value = "";
 });
